@@ -1,5 +1,11 @@
 body {
   background-color: darkgray;
+  background-image: linear-gradient(
+    45deg,
+    rgb(77, 83, 95) 40%,
+    rgb(141, 134, 134) 60%,
+    rgb(119, 129, 161) 70%
+  );
 }
 
 header {
@@ -7,8 +13,8 @@ header {
   align-items: center;
 }
 
-h1 {
-  font-size: 50px;
+#header-box {
+  font-size: 20px;
   color: rgb(55, 40, 194);
   font-family: "Konkhmer Sleokchher", display;
   letter-spacing: 0.1em;
@@ -20,17 +26,18 @@ h1 {
 
 #portrai-image {
   margin-left: 90px;
-  box-shadow: 4px 4px 4px;
+  box-shadow: 2px 2px 2px;
   color: rgb(55, 40, 194);
   border: 2px solid #555;
   width: 200px;
   border-radius: 25% 50% 50% 0%;
+  position: relative;
 }
 
 .section-box {
   color: rgb(55, 40, 194);
   background-color: rgba(155, 155, 155, 0.753);
-  text-shadow: 4px 4px 2px rgb(184, 184, 189);
+  text-shadow: 1px 1px 1px rgb(184, 184, 189);
   padding: 20px;
   box-shadow: 4px 4px 4px;
   margin: 50px 50px;
@@ -44,4 +51,8 @@ h1 {
   box-shadow: 4px 4px 4px;
   margin: 20px 0px;
   height: 130px;
+}
+
+#ordered-list {
+  list-style-position: inside;
 }

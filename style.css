@@ -25,15 +25,31 @@ body {
 header {
   position: relative;
   align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #header-box {
-  font-size: 20px;
-  color: rgb(55, 40, 194);
-  font-family: "Konkhmer Sleokchher", display;
+  font-size: 40px;
+  color: #e9d8a6;
+  font-family: "Libre Barcode 128 Text", display;
   letter-spacing: 0.1em;
-  background-color: rgba(155, 155, 155, 0.753);
-  text-shadow: 4px 4px 2px rgb(184, 184, 189);
+  background: rgb(8, 118, 120);
+  background: linear-gradient(
+    232deg,
+    rgba(8, 118, 120, 1) 0%,
+    rgba(11, 165, 168, 1) 12%,
+    rgba(12, 189, 192, 1) 15%,
+    rgba(14, 210, 214, 1) 18%,
+    rgba(14, 212, 216, 1) 37%,
+    rgba(15, 236, 240, 1) 51%,
+    rgba(14, 212, 216, 1) 57%,
+    rgba(12, 189, 192, 1) 69%,
+    rgba(11, 165, 168, 1) 72%,
+    rgba(9, 142, 144, 1) 89%,
+    rgba(8, 118, 120, 1) 93%
+  );
+  text-shadow: 3px 3px 2px #005f73;
   padding-left: 20px;
   box-shadow: 4px 4px 4px;
   width: 100%;
@@ -41,9 +57,9 @@ header {
 }
 
 #portrai-image {
-  margin-left: 90px;
+  background-size: 200px 200px;
   box-shadow: 2px 2px 2px;
-  color: rgb(55, 40, 194);
+  color: #ee9b00;
   border: 2px solid #555;
   width: 200px;
   border-radius: 25% 50% 50% 0%;
@@ -51,8 +67,8 @@ header {
 }
 
 .section-box {
-  color: rgb(55, 40, 194);
-  background-color: rgba(155, 155, 155, 0.753);
+  color: black;
+  background-color: #005f73;
   _text-shadow: 1px 1px 1px rgb(184, 184, 189);
   padding: 20px;
   box-shadow: 4px 4px 4px;

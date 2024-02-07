@@ -10,11 +10,77 @@
 html {
   font-family: roboto;
   line-height: 150%;
+  color: cornsilk;
+  --color1: hotpink;
+  --color2: dodgerblue;
+  --color3: cyan;
+  --angle: 45deg;
+
+  --theme1: linear-gradient(
+    var(--angle),
+    var(--color3),
+    var(--color1),
+    var(--color2)
+  );
+  --theme2: linear-gradient(
+    var(--angle),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1)
+  );
+
+  --theme3: linear-gradient(
+    var(--angle),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
+
+  --theme4: linear-gradient(
+    var(--angle),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2),
+    var(--color3),
+    var(--color1),
+    var(--color2),
+    var(--color3)
+  );
 }
 
 body {
   background-color: #001219;
   background-image: linear-gradient(45deg, rgba(8, 118, 120, 1));
+}
+
+.ordered-list > li:nth-child(1) {
+  background-image: var(--theme1);
+}
+
+.ordered-list > li:nth-child(2) {
+  background-image: var(--theme2);
+}
+
+.ordered-list > li:nth-child(3) {
+  background-image: var(--theme3);
+}
+
+.ordered-list > li:nth-child(4) {
+  background-image: var(--theme4);
 }
 
 header {
@@ -29,7 +95,6 @@ header {
   color: #e9d8a6;
   font-family: "Libre Barcode 128 Text", display;
   letter-spacing: 0.1em;
-  background: rgb(8, 118, 120);
   background: linear-gradient(
     232deg,
     rgba(8, 118, 120, 1) 0%,
@@ -52,8 +117,7 @@ header {
 }
 
 #portrai-image {
-  box-shadow: 4px 4px 6px;
-  color: #e9d8a6;
+  box-shadow: 2px 2px 3px;
   border: 2px solid #555;
   width: 183px;
   height: 183px;
@@ -66,14 +130,11 @@ header {
 }
 
 .section-box {
-  color: black;
   background-color: #0cbdc0;
-  _text-shadow: 1px 1px 1px rgb(184, 184, 189);
   padding: 20px;
-  box-shadow: 4px 4px 4px;
   margin: 50px 50px;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px #e9d8a6;
+  box-shadow: 2px 2px #e9d8a6;
 }
 
 #footer-box {
@@ -85,6 +146,6 @@ header {
   margin: auto;
 }
 
-#ordered-list {
+.ordered-list {
   list-style-position: inside;
 }

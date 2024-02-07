@@ -13,13 +13,8 @@ html {
 }
 
 body {
-  background-color: darkgray;
-  background-image: linear-gradient(
-    45deg,
-    rgb(77, 83, 95) 40%,
-    rgb(141, 134, 134) 60%,
-    rgb(119, 129, 161) 70%
-  );
+  background-color: #001219;
+  background-image: linear-gradient(45deg, rgba(8, 118, 120, 1));
 }
 
 header {
@@ -72,16 +67,17 @@ header {
 
 .section-box {
   color: black;
-  background-color: #005f73;
+  background-color: #0cbdc0;
   _text-shadow: 1px 1px 1px rgb(184, 184, 189);
   padding: 20px;
   box-shadow: 4px 4px 4px;
   margin: 50px 50px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px #e9d8a6;
 }
 
 #footer-box {
-  color: rgb(55, 40, 194);
-  background-color: rgba(155, 155, 155, 0.753);
+  background-color: #0cbdc0;
   text-shadow: 4px 4px 2px rgb(184, 184, 189);
   padding-left: 20px;
   box-shadow: 4px 4px 4px;

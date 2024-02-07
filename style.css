@@ -21,6 +21,7 @@ html {
   --color1: hotpink;
   --color2: dodgerblue;
   --color3: cyan;
+  --color4: cornsilk;
   --angle: 45deg;
 
   --theme1: linear-gradient(
@@ -29,7 +30,15 @@ html {
     var(--color1),
     var(--color2)
   );
+
   --theme2: linear-gradient(
+    135deg,
+    var(--color3),
+    var(--color1),
+    var(--color2)
+  );
+
+  --theme3: linear-gradient(
     var(--angle),
     var(--color2),
     var(--color3),
@@ -39,7 +48,7 @@ html {
     var(--color1)
   );
 
-  --theme3: linear-gradient(
+  --theme4: linear-gradient(
     var(--angle),
     var(--color1),
     var(--color2),
@@ -52,7 +61,7 @@ html {
     var(--color3)
   );
 
-  --theme4: linear-gradient(
+  --theme5: linear-gradient(
     var(--angle),
     var(--color1),
     var(--color2),
@@ -146,7 +155,7 @@ ul > li::marker {
   list-style-position: inside;
 }
 
-#portrai-image {
+.portrait-image {
   box-shadow: 2px 2px 3px;
   border: 2px solid #555;
   width: 188px;
@@ -178,9 +187,15 @@ ul > li::marker {
 
 .nav-bar {
   background-image: linear-gradient(
-    var(--color3) 10%,
-    var(--color1) 50%,
-    var(--color2) 90%
+    var(--color3) 0%,
+    var(--color2) 25%,
+    var(--color3) 30%,
+    grey,
+    var(--color4) 50%,
+    grey 55%,
+    var(--color3) 70%,
+    var(--color2) 75%,
+    var(--color3) 100%
   );
 }
 
@@ -198,4 +213,33 @@ ul > li::marker {
 
 .ordered-list > li:nth-child(5) {
   background-image: var(--theme1);
+}
+
+@media screen and (max-width: 1300px) {
+  #header-box {
+    font-size: 20px;
+  }
+
+  .portrait-image {
+  +
+}
+
+@media screen and (max-width: 800px) {
+  #header-box {
+    font-size: 20px;
+  }
+
+  .portrait-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header-box {
+    font-size: 16px;
+  }
+
+  .portrait-image {
+    display: none;
+  }
 }

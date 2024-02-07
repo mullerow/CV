@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=3.0">
     <meta name="description" content="CV build with html and css">
     <meta name="keywords" content="HTML, CSS, CV">
     <meta name="author" content="Maximilian Kohler">
@@ -11,28 +11,32 @@
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=libre-barcode-128-text:400" rel="stylesheet" />
     <link href="https://fonts.bunny.net/css?family=konkhmer-sleokchher:400" rel="stylesheet" />
 </head>
 
 <body>
     <header id="header-box">
-        <h1>LEBENSLAUF</h1>
         <div id="portrai-image">
             <img src="foto.jpg" alt="Portrai-Foto von Maximilian Kohler"
-                style="width:200px;height:200px; border-radius: 25% 50% 50% 0%">
+                style="width:180px; height:180px; border-radius: 25% 70% 50% 0%">
         </div>
+        <h1>LEBENSLAUF VON MAXIMILIAN KOHLER</h1>
     </header>
     <main>
-        <ol type="I" id="ordered-list">
-            <li class="section-box">
-                <h2>Index</h2>
-                <ul>
+        <ol type="I" class="ordered-list">
+
+
+            <nav>
+                <ul class=" section-box nav-bar">
+                    <h2>Index</h2>
                     <li><a href="#experience">Erfahrungen</a></li>
                     <li><a href="#education">Bildung</a></li>
                     <li><a href="#it-skills">IT-Skills</a></li>
                     <li><a href="#languages">Sprachen</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
+            </nav>
             </li>
             <li class="section-box">
                 <h2 id="experience">Erfahrungen</h2>

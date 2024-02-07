@@ -7,6 +7,12 @@
   src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 html {
   font-family: roboto;
   line-height: 150%;
@@ -101,6 +107,47 @@ header {
   margin: auto;
 }
 
+ol > li::marker {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+ul > li::marker {
+  font-size: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 25px;
+}
+
+.nav-bar li {
+  padding: 20px;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.nav-bar {
+  background-color: red;
+}
+
+.nav-bar li a:hover {
+  color: cornsilk;
+  border: 2px solid cornsilk;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ordered-list {
+  list-style-position: inside;
+}
+
 #portrai-image {
   box-shadow: 2px 2px 3px;
   border: 2px solid #555;
@@ -131,20 +178,12 @@ header {
   margin: auto;
 }
 
-.ordered-list {
-  list-style-position: inside;
-}
-
-.ordered-list ol {
-  font-size: 30px;
-}
-
-.ordered-list > li:nth-child(1) {
+.nav-bar {
   background-image: var(--theme1);
 }
 
 .ordered-list > li:nth-child(2) {
-  background-image: var(--theme1);
+  background-image: var(--theme2);
 }
 
 .ordered-list > li:nth-child(3) {
@@ -152,7 +191,7 @@ header {
 }
 
 .ordered-list > li:nth-child(4) {
-  background-image: var(--theme1);
+  background-image: var(--theme2);
 }
 
 .ordered-list > li:nth-child(5) {

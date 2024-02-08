@@ -7,23 +7,12 @@
   src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: roboto;
-  line-height: 180%;
-  letter-spacing: 1px;
-  color: cornsilk;
-  text-shadow: 1px 1px 1px black;
+:root {
   --color1: hotpink;
   --color2: dodgerblue;
   --color3: cyan;
   --color4: cornsilk;
-  --angle: 45deg;
+  --angle: 60deg;
 
   --theme1: linear-gradient(
     var(--angle),
@@ -77,6 +66,20 @@ html {
     var(--color2),
     var(--color3)
   );
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: roboto;
+  line-height: 180%;
+  letter-spacing: 1px;
+  color: cornsilk;
+  text-shadow: 1px 1px 1px black;
 }
 
 body {
@@ -144,23 +147,15 @@ ul > li::marker {
   text-decoration: none;
   font-weight: bolder;
   color: cornsilk;
-  transition: background-color 1s;
-  transition: color 1s;
-}
-
-.nav-bar {
-  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color .5s ease, color 0.5s ease;
+  border: 2px solid transparent;
 }
 
 .nav-bar li a:hover {
-  color: var(--color1);
   border: 2px solid cornsilk;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: var(--color3);
 }
-
-
 
 
 .ordered-list {

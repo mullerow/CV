@@ -32,7 +32,7 @@
     var(--angle),
     var(--color2) 45%,
     var(--color3) 50%,
-    var(--color1) 55%,
+    var(--color1) 55%
   );
 }
 
@@ -62,7 +62,7 @@ header {
 }
 
 main {
-  margin: 0 40px;
+  margin: 0 50px;
 }
 
 li a {
@@ -78,47 +78,30 @@ ul > li::marker {
   font-size: 20px;
 }
 
-.index {
-  font-size: 50px;
-}
-
 .section-box + .section-box {
   margin-top: 50px;
 }
 
 #header-box {
   font-size: 40px;
+  font-weight: bold;
   color: #e9d8a6;
   font-family: "Libre Barcode 128 Text", display;
   letter-spacing: 0.1em;
   background-image: linear-gradient(
-    232deg,
-    rgba(8, 118, 120, 1) 0%,
-    rgba(11, 165, 168, 1) 12%,
-    rgba(12, 189, 192, 1) 15%,
-    rgba(14, 210, 214, 1) 18%,
-    rgba(14, 212, 216, 1) 37%,
-    rgba(15, 236, 240, 1) 51%,
-    rgba(14, 212, 216, 1) 57%,
-    rgba(12, 189, 192, 1) 69%,
-    rgba(11, 165, 168, 1) 72%,
-    rgba(9, 142, 144, 1) 89%,
-    rgba(8, 118, 120, 1) 93%),
-    url("images/wabenstrucktur.png")
-    
-     ;
-
-  -background-image: url("image.jpg"), url("image-2.jpg");
-  background-color: purple;
+      130deg,
+      rgb(226, 126, 126),
+      rgba(11, 165, 168, 1) 80%,
+      rgb(56, 44, 44)
+    ),
+    url("images/wabenstrucktur.png");
+  background-color: rgb(180, 84, 100);
   background-blend-mode: screen, difference, lighten;
-  text-shadow: 3px 3px 2px #005f73;
-  padding-left: 20px;
+  text-shadow: 2px 2px 3px rgb(7, 5, 5);
   box-shadow: 4px 4px 4px;
   width: 100%;
   margin: auto;
 }
-
-/* url("images/wabenstrucktur.png") */
 
 .nav-bar {
   display: flex;
@@ -126,14 +109,14 @@ ul > li::marker {
   align-items: baseline;
   list-style: none;
   font-size: 26px;
+  margin-top: 0px;
+  padding-top: 0px;
   background-color: transparent;
-  height: 60px;
-  border: 2px solid red;
 }
 
 .nav-bar li a {
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: bold;
   color: #e9d8a6;
   padding: 10px;
   border-radius: 10px;
@@ -147,6 +130,8 @@ ul > li::marker {
 
 .ordered-list {
   list-style-position: inside;
+  margin: 0;
+  padding: 0;
 }
 
 .portrait-image {
@@ -179,6 +164,13 @@ ul > li::marker {
   margin-top: 50px;
 }
 
+#index {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 26px;
+  border: 2px solid red;
+}
+
 _.ordered-list > li:nth-child(2) {
   background-image: var(--theme1);
 }
@@ -202,7 +194,7 @@ _.ordered-list > li:nth-child(5) {
 
   .portrait-image {
     display: none;
-}
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -224,8 +216,3 @@ _.ordered-list > li:nth-child(5) {
     display: none;
   }
 }
-
-
-/* background-image: url("images/wabenstrucktur.png"); 
-  background-repeat:repeat;
-  filter: invert(100%);

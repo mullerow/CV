@@ -8,63 +8,31 @@
 }
 
 :root {
-  --color1: hotpink;
-  --color2: dodgerblue;
+  --color1: cornsilk;
+  --color2: rgba(12, 189, 192, 1);
   --color3: cyan;
   --color4: cornsilk;
   --angle: 60deg;
 
   --theme1: linear-gradient(
-    var(--angle),
-    var(--color3),
-    var(--color1),
-    var(--color2)
+    20deg,
+    var(--color3) 50%,
+    var(--color1) 90%,
+    var(--color2) 95%
   );
 
   --theme2: linear-gradient(
-    135deg,
-    var(--color3),
-    var(--color1),
-    var(--color2)
+    168deg,
+    var(--color3) 20%,
+    var(--color1) 50%,
+    var(--color2) 55%
   );
 
   --theme3: linear-gradient(
     var(--angle),
-    var(--color2),
-    var(--color3),
-    var(--color1),
-    var(--color2),
-    var(--color3),
-    var(--color1)
-  );
-
-  --theme4: linear-gradient(
-    var(--angle),
-    var(--color1),
-    var(--color2),
-    var(--color3),
-    var(--color1),
-    var(--color2),
-    var(--color3),
-    var(--color1),
-    var(--color2),
-    var(--color3)
-  );
-
-  --theme5: linear-gradient(
-    var(--angle),
-    var(--color1),
-    var(--color2),
-    var(--color3),
-    var(--color1),
-    var(--color2),
-    var(--color3),
-    var(--color1),
-    var(--color2),
-    var(--color3),
-    var(--color1),
-    var(--color2),
-    var(--color3)
+    var(--color2) 45%,
+    var(--color3) 50%,
+    var(--color1) 55%,
   );
 }
 
@@ -78,7 +46,7 @@ html {
   font-family: roboto;
   line-height: 180%;
   letter-spacing: 1px;
-  color: cornsilk;
+  color: #e9d8a6;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -93,7 +61,11 @@ header {
   justify-content: space-evenly;
 }
 
-a {
+main {
+  margin: 0 40px;
+}
+
+li a {
   color: wheat;
 }
 
@@ -104,6 +76,14 @@ ol > li::marker {
 
 ul > li::marker {
   font-size: 20px;
+}
+
+.index {
+  font-size: 50px;
+}
+
+.section-box + .section-box {
+  margin-top: 50px;
 }
 
 #header-box {
@@ -123,8 +103,14 @@ ul > li::marker {
     rgba(12, 189, 192, 1) 69%,
     rgba(11, 165, 168, 1) 72%,
     rgba(9, 142, 144, 1) 89%,
-    rgba(8, 118, 120, 1) 93%)
+    rgba(8, 118, 120, 1) 93%),
+    url("images/wabenstrucktur.png")
+    
      ;
+
+  -background-image: url("image.jpg"), url("image-2.jpg");
+  background-color: purple;
+  background-blend-mode: screen, difference, lighten;
   text-shadow: 3px 3px 2px #005f73;
   padding-left: 20px;
   box-shadow: 4px 4px 4px;
@@ -139,24 +125,25 @@ ul > li::marker {
   justify-content: space-around;
   align-items: baseline;
   list-style: none;
-  font-size: 24px;
-  height: 20px;
+  font-size: 26px;
+  background-color: transparent;
+  height: 60px;
+  border: 2px solid red;
 }
 
 .nav-bar li a {
   text-decoration: none;
   font-weight: bolder;
-  color: cornsilk;
+  color: #e9d8a6;
   padding: 10px;
   border-radius: 10px;
-  transition: background-color .5s ease, color 0.5s ease;
+  transition: color 0.5s ease;
   border: 2px solid transparent;
 }
 
 .nav-bar li a:hover {
   border: 2px solid cornsilk;
 }
-
 
 .ordered-list {
   list-style-position: inside;
@@ -178,45 +165,33 @@ ul > li::marker {
 .section-box {
   background-color: #0cbdc0;
   padding: 20px;
-  margin: 55px 50px;
   border-radius: 20px;
-  box-shadow: 2px 2px 20px #e9d8a6;
+  box-shadow: 4px 4px 5px #e9d8a6;
 }
 
 #footer-box {
   background-color: #0cbdc0;
   text-shadow: 4px 4px 2px rgb(184, 184, 189);
-  padding-left: 20px;
+  padding-left: 50px;
   box-shadow: 4px 4px 4px;
   width: 100%;
   margin: auto;
+  margin-top: 50px;
 }
 
-.nav-bar {
-  background-color: rgba(12, 189, 192, 1);
-  -background-image: linear-gradient(
-    var(--color3) 0%,
-    var(--color2) 25%,
-    var(--color3) 30%,
-    var(--color3) 70%,
-    var(--color2) 75%,
-    var(--color3) 100%
-  );
-}
-
-.ordered-list > li:nth-child(2) {
+_.ordered-list > li:nth-child(2) {
   background-image: var(--theme1);
 }
 
-.ordered-list > li:nth-child(3) {
+_.ordered-list > li:nth-child(3) {
   background-image: var(--theme2);
 }
 
-.ordered-list > li:nth-child(4) {
+_.ordered-list > li:nth-child(4) {
   background-image: var(--theme1);
 }
 
-.ordered-list > li:nth-child(5) {
+_.ordered-list > li:nth-child(5) {
   background-image: var(--theme2);
 }
 

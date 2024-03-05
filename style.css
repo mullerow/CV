@@ -1,10 +1,147 @@
-/* roboto-regular - latin */
+@page {
+  size: A4;
+}
+
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("roboto-v30-latin-regular.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: black;
+  text-shadow: 0.5px 0.5px 0 rgba(95, 95, 95, 0.747);
+}
+
+body {
+  margin: 0 auto;
+  font-size: 11px;
+  width: 21cm;
+  height: 27.7cm;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas:
+    "aside header header"
+    "aside section section";
+  background-color: #e1e1e1;
+  border-radius: 10px;
+}
+
+h2 {
+  position: absolute;
+  font-size: 24px;
+  margin-left: 30px;
+  z-index: 5;
+}
+
+h3 {
+  margin-left: 5%;
+  font-size: 20px;
+  color: #117f8b;
+}
+
+p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+header {
+  position: relative;
+  grid-area: header;
+  border-radius: 0 10px 0 0;
+}
+
+section {
+  grid-area: section;
+  border-radius: 0 0 10px 0;
+}
+
+aside {
+  grid-area: aside;
+  color: white;
+  background-color: #383e3e;
+  border-radius: 10px 0 0 10px;
+  _text-align: justify;
+  padding: 20px;
+}
+
+#profil-header {
+  margin-left: 0;
+}
+
+.job-title {
+  position: absolute;
+  top: 18%;
+  left: 18.4%;
+  font-size: 14px;
+}
+
+.structure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      176deg,
+      #117f8b,
+      #16a8b6 20%,
+      #19bdcc 40%,
+      #19bdcc 60%,
+      #16a8b6 80%,
+      #117f8b 100%
+    ),
+    url("images/wabenstrucktur-opacity05.png");
+  background-blend-mode: overlay;
+  border-radius: 0 10px 0 0;
+}
+
+.portrait-image {
+  box-shadow: 1px 1px 1px;
+  border: 2px solid #555;
+  width: 200px;
+  height: 210px;
+  background-color: #19bdcc;
+  border-radius: 25% 70% 50% 0%;
+  position: relative;
+  margin: 10px auto 60px 10px;
+  padding-top: 4px;
+  padding-left: 4px;
+}
+
+.pitch {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  right: 5%;
+  font-size: 11px;
+  line-height: 140%;
+}
+
+/* url("images/wabenstrucktur.png"), */
+
+/* roboto-regular - latin */
+
+/* 
+@font-face {
+  font-display: swap; 
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); 
 }
 
 :root {
@@ -83,24 +220,28 @@ ul > li::marker {
 }
 
 #header-box {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   color: #e9d8a6;
   font-family: "Libre Barcode 128 Text", display;
   letter-spacing: 0.1em;
   background-image: linear-gradient(
       130deg,
-      rgb(226, 126, 126),
-      rgba(11, 165, 168, 1) 80%,
-      rgb(56, 44, 44)
+      rgb(226, 43, 43) 0%,
+      rgb(37, 29, 29) 40%,
+      rgb(56, 44, 44) 75%,
+      #117f8b
     ),
+    url("/images/background-portrait-shrink.png"),
     url("images/wabenstrucktur.png");
-  background-color: rgb(180, 84, 100);
-  background-blend-mode: screen, difference, lighten;
-  text-shadow: 2px 2px 3px rgb(7, 5, 5);
+  background-color: rgb(84, 174, 180);
+  background-blend-mode: overlay, multiply, lighten;
+  text-shadow: 3px 3px 3px black;
   box-shadow: 4px 4px 4px;
   width: 100%;
   margin: auto;
+  height: 200px;
+  background-repeat: no-repeat;
 }
 
 .nav-bar {
@@ -171,22 +312,6 @@ ul > li::marker {
   border: 2px solid red;
 }
 
-_.ordered-list > li:nth-child(2) {
-  background-image: var(--theme1);
-}
-
-_.ordered-list > li:nth-child(3) {
-  background-image: var(--theme2);
-}
-
-_.ordered-list > li:nth-child(4) {
-  background-image: var(--theme1);
-}
-
-_.ordered-list > li:nth-child(5) {
-  background-image: var(--theme2);
-}
-
 @media screen and (max-width: 1300px) {
   #header-box {
     font-size: 20px;
@@ -216,3 +341,5 @@ _.ordered-list > li:nth-child(5) {
     display: none;
   }
 }
+
+*/

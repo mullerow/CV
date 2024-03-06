@@ -59,6 +59,11 @@ h3 {
   color: #117f8b;
 }
 
+h4 {
+  margin-left: 5%;
+  font-size: 15px;
+}
+
 p {
   margin-left: 5%;
   margin-right: 5%;
@@ -90,7 +95,7 @@ address p a {
 }
 
 span {
-  color: #e1e1e1;
+  color: #7bb2b8;
 }
 
 .structure {
@@ -140,6 +145,19 @@ span {
   line-height: 180%;
   font-weight: 500;
   letter-spacing: 1.2px;
+}
+
+.tech-skills {
+  display: flex;
+}
+
+.tech-name {
+  margin-left: 10px;
+  width: 80px;
+}
+
+.tech-level {
+  margin-left: 15px;
 }
 
 #profil-header {

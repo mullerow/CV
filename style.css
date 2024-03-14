@@ -43,13 +43,12 @@ main {
     "aside header"
     "aside section";
   background-color: #e1e1e1;
-  border-radius: 10px;
 }
 
 h2 {
   position: absolute;
   font-size: 28px;
-  margin-left: 30px;
+  margin-left: 5%;
   z-index: 5;
 }
 
@@ -69,6 +68,7 @@ h4 {
 h5 {
   margin-left: 13%;
   margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -86,21 +86,17 @@ p {
 header {
   position: relative;
   grid-area: header;
-  border-radius: 0 10px 0 0;
   height: 270px;
 }
 
 section {
   grid-area: section;
-  border-radius: 0 0 10px 0;
 }
 
 aside {
   grid-area: aside;
   color: white;
   background-color: #383e3e;
-  border-radius: 10px 0 0 10px;
-  _text-align: justify;
   padding: 20px;
 }
 
@@ -126,7 +122,7 @@ address {
 .structure {
   position: absolute;
   width: 100%;
-  height: 104.1%;
+  height: 102.2%;
   background-image: linear-gradient(
       176deg,
       #117f8b,
@@ -138,7 +134,6 @@ address {
     ),
     url("images/wabenstrucktur-opacity05.png");
   background-blend-mode: overlay;
-  border-radius: 0 10px 0 0;
 }
 
 hr {
@@ -198,6 +193,18 @@ li + li {
   font-weight: bold;
 }
 
+.placeholder-aside {
+  height: 70px;
+}
+
+.placeholder-main {
+  height: 361px;
+}
+
+.placeholder-change-sides {
+  height: 43px;
+}
+
 #contact-header {
   font-style: normal;
 }
@@ -207,216 +214,3 @@ li + li {
   color: black;
   font-size: 16px;
 }
-
-/* url("images/wabenstrucktur.png"), */
-
-/* roboto-regular - latin */
-
-/* 
-@font-face {
-  font-display: swap; 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); 
-}
-
-:root {
-  --color1: cornsilk;
-  --color2: rgba(12, 189, 192, 1);
-  --color3: cyan;
-  --color4: cornsilk;
-  --angle: 60deg;
-
-  --theme1: linear-gradient(
-    20deg,
-    var(--color3) 50%,
-    var(--color1) 90%,
-    var(--color2) 95%
-  );
-
-  --theme2: linear-gradient(
-    168deg,
-    var(--color3) 20%,
-    var(--color1) 50%,
-    var(--color2) 55%
-  );
-
-  --theme3: linear-gradient(
-    var(--angle),
-    var(--color2) 45%,
-    var(--color3) 50%,
-    var(--color1) 55%
-  );
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: roboto;
-  line-height: 180%;
-  letter-spacing: 1px;
-  color: #e9d8a6;
-  text-shadow: 1px 1px 1px black;
-}
-
-body {
-  background-color: #001219;
-}
-
-header {
-  position: relative;
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-main {
-  margin: 0 50px;
-}
-
-li a {
-  color: wheat;
-}
-
-ol > li::marker {
-  font-size: 26px;
-  font-weight: bold;
-}
-
-ul > li::marker {
-  font-size: 20px;
-}
-
-.section-box + .section-box {
-  margin-top: 50px;
-}
-
-#header-box {
-  font-size: 50px;
-  font-weight: bold;
-  color: #e9d8a6;
-  font-family: "Libre Barcode 128 Text", display;
-  letter-spacing: 0.1em;
-  background-image: linear-gradient(
-      130deg,
-      rgb(226, 43, 43) 0%,
-      rgb(37, 29, 29) 40%,
-      rgb(56, 44, 44) 75%,
-      #117f8b
-    ),
-    url("/images/background-portrait-shrink.png"),
-    url("images/wabenstrucktur.png");
-  background-color: rgb(84, 174, 180);
-  background-blend-mode: overlay, multiply, lighten;
-  text-shadow: 3px 3px 3px black;
-  box-shadow: 4px 4px 4px;
-  width: 100%;
-  margin: auto;
-  height: 200px;
-  background-repeat: no-repeat;
-}
-
-.nav-bar {
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
-  list-style: none;
-  font-size: 26px;
-  margin-top: 0px;
-  padding-top: 0px;
-  background-color: transparent;
-}
-
-.nav-bar li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #e9d8a6;
-  padding: 10px;
-  border-radius: 10px;
-  transition: color 0.5s ease;
-  border: 2px solid transparent;
-}
-
-.nav-bar li a:hover {
-  border: 2px solid cornsilk;
-}
-
-.ordered-list {
-  list-style-position: inside;
-  margin: 0;
-  padding: 0;
-}
-
-.portrait-image {
-  box-shadow: 2px 2px 3px;
-  border: 2px solid #555;
-  width: 188px;
-  height: 188px;
-  background-color: #005f73;
-  border-radius: 25% 70% 50% 0%;
-  position: relative;
-  margin: 10px 0;
-  padding-top: 2px;
-  padding-left: 2px;
-}
-
-.section-box {
-  background-color: #0cbdc0;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 5px #e9d8a6;
-}
-
-#footer-box {
-  background-color: #0cbdc0;
-  text-shadow: 4px 4px 2px rgb(184, 184, 189);
-  padding-left: 50px;
-  box-shadow: 4px 4px 4px;
-  width: 100%;
-  margin: auto;
-  margin-top: 50px;
-}
-
-#index {
-  margin-top: 25px;
-  margin-bottom: 0;
-  font-size: 26px;
-  border: 2px solid red;
-}
-
-@media screen and (max-width: 1300px) {
-  #header-box {
-    font-size: 20px;
-  }
-
-  .portrait-image {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  #header-box {
-    font-size: 20px;
-  }
-
-  .portrait-image {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #header-box {
-    font-size: 16px;
-  }
-
-  .portrait-image {
-    display: none;
-  }
-}
-
-*/

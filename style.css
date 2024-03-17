@@ -104,6 +104,10 @@ address p a {
   color: #19bdcc;
 }
 
+li a {
+  color: #117f8b;
+}
+
 time {
   font-size: 16px;
   font-weight: 600;
